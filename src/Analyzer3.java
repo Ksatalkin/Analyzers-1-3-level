@@ -73,7 +73,7 @@ public class Analyzer3 {
 
 
             for (int j3 = 0; j3 < s.length() - 2; j3++) {
-                if (s.charAt(j3) == '*' && s.charAt(j3 + 1) == '(' && s.charAt(j3 + 2) == '-' ||
+                /*if (s.charAt(j3) == '*' && s.charAt(j3 + 1) == '(' && s.charAt(j3 + 2) == '-' ||
                         s.charAt(j3) == '/' && s.charAt(j3 + 1) == '(' && s.charAt(j3 + 2) == '-') {
                     for (j4 = j3; s.charAt(j4) != '+' || s.charAt(j4) != '-'; j4--) {
                     }
@@ -99,7 +99,7 @@ public class Analyzer3 {
                         else if (s.charAt(j5) == '-') s = s.replace(String.valueOf(s.charAt(j5)), "+");
                     }
                     j3 = 0;
-                }else
+                }else*/
                 if (s.charAt(j3) == '*' && s.charAt(j3 + 1) == '-') {
                     j6 = j3-1;
                     while (s.charAt(j6) != '+' && s.charAt(j6) != '-' &&
